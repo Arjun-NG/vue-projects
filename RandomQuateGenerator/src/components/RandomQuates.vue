@@ -35,20 +35,28 @@ onMounted(Randomquate);
 
 <template>
   <div class="wrapper">
-    <h1>Random Quate Generator</h1>
-    <p>{{ currentQuate.text }}</p>
-    <p>{{ currentQuate.author }}</p>
+    <div>
+      <h1>Random Quate Generator</h1>
+      <p>{{ currentQuate.text }}</p>
+      <p>{{ currentQuate.author }}</p>
+    </div>
   </div>
-  <button @click="Randomquate">generate</button>
+  <button @click="Randomquate" class="button">generate</button>
 </template>
 
 <style scoped>
 .wrapper {
-  border: 1px solid black;
-  display: grid;
-  place-content: center;
-}
-button {
+  padding: 10px;
   margin: 0px auto;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 400px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  text-align: center;
 }
 </style>
